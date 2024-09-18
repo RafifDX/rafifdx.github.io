@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto Enak</title>
+    <style>
+        body {
+            background-color: #F6F6F6; 
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+        }
+        .nama-resto {
+            background-color: #0d1033;
+            padding: 10px 40px;
+            text-align: center;
+        }
+        .logo {
+            width: 50%;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .col-6 {
+            width: 50%;
+            flex: 0 0 auto;
+            position: relative;
+        }
+        .text-white {
+            color: #fff;
+        }
+        .company-details {
+            float: right;
+            text-align: right;
+            position: absolute;
+            right: 0;
+        }
+        .body-section {
+            padding: 16px;
+            border: 1px solid gray;
+            position: relative;
+        }
+        .heading {
+            font-size: 20px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .sub-heading {
+            color: #262626;
+            margin-bottom: 5px;
+            position: relative;
+        }
+        table {
+            background-color: #fff;
+            width: 100%;
+            border-collapse: collapse;
+            position: relative;
+        }
+        table thead tr {
+            border: 1px solid #111;
+            background-color: #f2f2f2;
+            position: relative;
+        }
+        table td {
+            vertical-align: middle !important;
+            text-align: center;
+            position: relative;
+        }
+        table th, table td {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            position: relative;
+        }
+        .table-bordered {
+            box-shadow: 0px 0px 5px 0.5px blue;
+            position: relative;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #dee2e6;
+        }
+        .text-right {
+            text-align: end;
+            position: relative;
+        }
+        .w-20 {
+            width: 20%;
+            position: relative;
+        }
+        .float-right {
+            float: right;
+            position: relative;
+        }
+        .namaku {
+            font-size: 15px;
+            position: relative;
+        }
+        .footer {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nama-resto">
+            <h1 class="text-white">
+                <img src="https://github.com/RafifDX/rafifdx.github.io/blob/main/posttest1/logo-resto.jpeg?raw=true" alt="Logo Restoran" style="vertical-align: middle;">
+                <br>
+                RESTO ENAK
+            </h1>
+        </div>
+
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="heading">Bukti Pemesanan:</h2>
+                    <p class="sub-heading">Nama Pelayan: Ahmad Nur Fauzan</p>
+                    <p class="sub-heading">Tanggal Pemesanan:
+                        <input type="date"></p>
+                </div>
+                <div class="col-6">
+                    <p class="sub-heading">Nama Pemesan: Abdullah Azzam </p>
+                    <p class="sub-heading">Alamat Pemesan: Jl. Merdeka No. 15, Kota Balikpapan</p>
+                    <p class="sub-heading">No. Telpon: 085245233111 </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="body-section">
+            <h3 class="heading">Pesanan:</h3>
+            <br>
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nama Menu</th>
+                        <th class="w-20">Jumlah</th>
+                        <th class="w-20">Harga Satuan</th>
+                        <th class="w-20">Harga Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://github.com/RafifDX/rafifdx.github.io/blob/main/posttest1/nasi-goreng.jpeg?raw=true" alt="gambar">
+                            <br>
+                            Nasi Goreng Spesial</td>
+                        <td><input type="text"> Porsi</td>
+                        <td>Rp 25.000</td>
+                        <td>Rp 25.000</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://github.com/RafifDX/rafifdx.github.io/blob/main/posttest1/es-teh-manis.jpeg?raw=true" alt="gambar">
+                            <br>
+                            Es Teh Manis</td>
+                        <td><input type="text"> Gelas</td>
+                        <td>Rp 5.000</td>
+                        <td>Rp 5.000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Total Pesanan</td>
+                        <td>Rp 30.000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Pajak</td>
+                        <td>Rp 2.000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-right">Total Tagihan</td>
+                        <td>Rp 32.000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><b>Metode Pembayaran:</b>
+                            <br>
+                            <input type="radio" name="bayar">Bank BCA
+                            <input type="radio" name="bayar">Bank BRI
+                            <input type="radio" name="bayar">OVO
+                            <input type="radio" name="bayar">GoPay
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h3 class="namaku">
+                • Nama: Muhammad Rafif Hanif<br>
+                • NIM: 2309106044<br>
+                • Praktikum Web: <a href="https://classroom.google.com/c/NzEwMjM0NDcyMzE3/a/NzA2MTI5NDQ3Nzg5/details"><u>Posttest 2</u></a>
+            </h3>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Resto Enak. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
