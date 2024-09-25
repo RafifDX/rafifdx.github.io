@@ -171,18 +171,25 @@ nav {
         display: none; 
         flex-direction: column; 
         position: absolute;
-        top: 80px; 
+        top: 80px;
         right: 0;
         background-color: #343434;
         width: 100%;
+        z-index: 1000; 
     }
 
     #navbar-list li {
         text-align: center;
-        padding: 10px 0;
+        padding: 10px 0; 
     }
 
     .hamburger {
         display: block; 
     }
 }
+
+.article {
+    position: relative;
+    z-index: 1;
+}
+
