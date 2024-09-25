@@ -11,7 +11,8 @@
         <div class="container">
             <nav>
                 <h1>ALAT TEKNIK</h1>
-                <ul>
+                <div id="hamburger" class="hamburger">&#9776;</div>
+                <ul id="navbar-list">
                     <li><a href="#" onclick="showHome()">Home</a></li>
                     <li><a href="#" onclick="showAbout()">About</a></li>
                     <li><a href="#">Service</a></li>
@@ -41,11 +42,18 @@
             </div>
         </div>
         <div class="bottom-bar">
-            <p>&copy; 2023 Alat Teknik. All rights reserved</p>
+            <p>&copy; 2023 Toko Alat Teknik. All Rights Reserved</p>
         </div>
     </footer>
 
     <script>
+        const hamburger = document.getElementById('hamburger');
+        const navbarList = document.getElementById('navbar-list');
+
+        hamburger.addEventListener('click', () => {
+            navbarList.style.display = navbarList.style.display === 'flex' ? 'none' : 'flex';
+        });
+
         function showHome() {
             document.getElementById("main-content").innerHTML = `
                 <h1>Toko Alat Teknik</h1>
